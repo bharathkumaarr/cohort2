@@ -1,0 +1,52 @@
+<html>
+  <script>
+    function SimpleInterest(){
+      const p = document.getElementById("pa").value;
+      const r = document.getElementById("roi").value;
+      const t = document.getElementById("t").value;
+      const element = document.getElementById("finalSI");
+      element.innerHTML= parseInt(p) * parseInt(t)*parseInt(r)/100;
+    }
+    
+    function compoundInterest(){
+      const pc = document.getElementById("pc").value;
+      const rc = document.getElementById("rc").value;
+      const tc = document.getElementById("tc").value;
+      const n = document.getElementById("n").value;
+
+      const element = document.getElementById("finalCI");
+
+      element.innerHTML = parseInt(pc) * Math.pow((1 + (parseInt(rc) / parseInt(n))), (parseInt(tc) * parseInt(n)));
+
+    }
+
+  </script>
+  <body>
+    <h3>Simple Interest</h3>
+    <input id="pa" type="text" placeholder="Principle amount">
+    <input id="roi" type="text" placeholder="Rate of Interest">
+    <input id="t" type="text" placeholder="Time">
+    <br>
+    <button onclick="SimpleInterest()">Calculate Simple Interest</button>
+    <div id="finalSI">
+    </div>
+
+
+
+    <h3>Compound Interest</h3>
+    <input id="pc" type="text" placeholder="Principle amount">
+    <input id="rc" type="text" placeholder="Rate of Interest">
+    <input id="tc" type="text" placeholder="Time">
+    <input id="n" type="text" placeholder="number of interes(n)">
+
+
+    
+    <br>
+    <button onclick="compoundInterest()">Calculate Compound Interest</button>
+    <div id="finalCI">
+    </div>
+
+    
+    
+  </body>
+</html>
