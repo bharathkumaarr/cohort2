@@ -1,28 +1,44 @@
 <html>
-<script>
-  function populateDiv(){
-
-    const a = document.getElementById("firstNumber").value;
-    const b = document.getElementById("secondNumber").value;
-    
-    const element = document.getElementById("finalSum");
-    // console.log(element); (
-    element.innerHTML = parseInt(a) + parseInt(b);
-  };
-</script>  
+  <head>
+    <title>sum</title>
+  </head>
 
 
-<body>
-    <input id="firstNumber" type="text" placeholder="First number"> <br>
-    <input id="secondNumber" type="text" placeholder="Second number"> <br>
-    <button onclick="populateDiv()">Calculate Sum
-    </button> <br><br>
-    <div id="finalSum">
-      <!-- DOM -->
- 
+  <body>
+    <div>
+      <input type="text" placeholder="firstNumeber" id="firstNumber">
+      <br><br>
+      <input type="text" placeholder="secondNumber" id="secondNumeber">
+      <br>
+      <br>
+      <button onclick="
+      const firstNumber = document.getElementById('firstNumber').value;
+      const secondNumber = document.getElementById('secondNumeber').value;
+      // console.log(firstNumber);
+      // console.log(secondNumber);
+      document.getElementById('sumResult').innerHTML = parseInt(firstNumber) + parseInt(secondNumber);
+      ">calculateSum</button>
     </div>
+    <div id="sumResult">
+      
+    </div>
+
+
+    <script>
+      
+
+
+    </script>
+    
   </body>
 </html>
+
+
+
+
+
+
+
 <!-- 
 
 <html>
