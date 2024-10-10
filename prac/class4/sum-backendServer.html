@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>sum</title>
+  </head>
+
+
+  <body>
+    <div>
+      <input type="text" placeholder="firstNumeber" id="firstNumber">
+      <br><br>
+      <input type="text" placeholder="secondNumber" id="secondNumeber">
+      <br>
+      <br>
+      <button onclick=" populateDiv()
+      
+      ">calculateSum</button>
+    </div>
+    <div id="sumResult">
+      
+    </div>
+
+
+    <script>
+      function populateDiv(){
+        const firstNumber = document.getElementById('firstNumber').value;
+        const secondNumber = document.getElementById('secondNumeber').value;
+      
+      // document.getElementById('sumResult').innerHTML = parseInt(firstNumber) + parseInt(secondNumber);
+
+      fetch('https://sum-server.100xdevs.com/sum?a=' + firstNumber + '&b=' + secondNumber)
+        .then(function(response){
+          console.log(response);
+          response.text()
+            .then(function(ans) {
+              console.log(ans);
+            })
+        });
+      }
+      
+
+
+    </script>
+    
+  </body>
+</html>
+
+
