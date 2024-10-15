@@ -21,3 +21,9 @@ function sumOfSomething(a,b,fn) {
 // console.log(sumOfSCubes(2,3));
 console.log(sumOfSomething(2,3,square));
 console.log(sumOfSomething(2,3,cube));
+
+
+// anonymous functions- no name
+
+
+
