@@ -9,6 +9,14 @@ document.createElement
 .appendChild  
 element.setAtrribtue  
 element.children  
+  
+  
+some state definition  
+more working using state to render todos from server to frontend  
+  
+  
+creating react using vite  
+  
 
   
 

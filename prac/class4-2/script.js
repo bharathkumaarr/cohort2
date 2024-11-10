@@ -10,7 +10,7 @@ function addTodo(){
     console.log(title);
     console.log(description);
     
-    const container = document.getElementById('container');
+    // const container = document.getElementById('container');
 
     
     // ugly methood
@@ -48,11 +48,34 @@ function createChild(title, description,id) {
     return child;
 }
 
-function markAsDone(todoId) {
-    const container = document.getElementById(todoId);
-    container.children[2].innerHTML = 'Done!';
+// function markAsDone(todoId) {
+//     const container = document.getElementById(todoId);
+//     container.children[2].innerHTML = 'Done!';
+// }
+
+
+
+// state
+// state is always an arr
+// every element in a state would have a title, description, id
+
+
+function updateDomAccToState(state) {
+    const parent = document.getElementById('container')
+    parent.innerHTML = '';
+
+    for (let i=0; i<state.length; i++) {
+        const child = createChild(state[i].title,state[i].description,state[i].id );
+        parent.appendChild(child);
+    }
 }
 
+updateDomAccToState([
+    {title: 'Buy Milk', description: 'Buy milk from the store', id:1},
+    {title: 'Buy soda', description: 'Buy soda from the store', id:2},
+    {title: 'Buy chips', description: 'Buy chips from the store', id:3}
+
+])
 
 
 
