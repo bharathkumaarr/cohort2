@@ -67,7 +67,10 @@ xml code is html code, remember it is not html that we write, we write xml code 
 
 created a simple hi there website using, index.hmtl, main.jsx, app.jsx. 
   
-
+  
+simple counter react app  
+simple todo react app[will look into it more next class/session]  
+  
     
   
 
