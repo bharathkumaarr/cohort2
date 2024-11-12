@@ -44,6 +44,24 @@ react takes care of re-rendering our app.
   
   
 let's create the same app using react.  
+  
+  
+this shit is too much  
+  
+initialisation of state,button render, re-rendering of state.  
+  
+  
+in real world all the websites(almost) are dynamic.   
+  
+  
+  
+now let's write it all in react: 
+  
+  
+  
+  
+  
+
     
   
 
