@@ -59,7 +59,13 @@ now let's write it all in react:
   
   
   
+create a react vite app  
   
+  
+we write code in jsx file: jsx contains xml code  
+xml code is html code, remember it is not html that we write, we write xml code that is very similar to html.  
+
+created a simple hi there website using, index.hmtl, main.jsx, app.jsx. 
   
 
     
