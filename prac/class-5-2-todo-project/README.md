@@ -8,5 +8,5 @@ this project contains a simple to do application
   
   
 initialise a node project   
-put a package.json file   
-what next 
+put a package.json file  
+ 
