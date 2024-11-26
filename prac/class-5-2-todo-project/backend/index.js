@@ -1,13 +1,16 @@
 // basic express boilerplate code
 // express.json() middleware
 
-const { scopePollingDetectionStrategy } = require('@solana/wallet-adapter-base');
 const { response } = require('express');
 const express = require('express');
 const app =express();
 
 app.use(express.json());
 
+// body {
+//     tittle: string;
+//     description: string;
+// }
 
 app.post('/todo', (req,res)=>{
    
