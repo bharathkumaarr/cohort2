@@ -1,24 +1,15 @@
-// basic express boilerplate code
-// express.json() middleware
+const express = require('express')
 
-const { response } = require('express');
-const express = require('express');
-const app =express();
+const app = express()
 
-app.use(express.json());
+app.use(express.json())
 
-// body {
-//     tittle: string;
-//     description: string;
-// }
+app.use('/todo', (req,res)=>{})
+app.use('/todos', (req,res)=>{})
+app.use('/completed', (req,res)=>{})
 
-app.post('/todo', (req,res)=>{
-   
+const PORT = 3000
+
+app.listen(port, ()=>{
+    console.log('server started at ',port )
 })
-app.get('/todos', (req,res)=>{
-   
-})
-app.put('/completed', (req,res)=>{
-   
-})
-

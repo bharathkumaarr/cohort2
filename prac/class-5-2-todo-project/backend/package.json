@@ -1,15 +1,16 @@
 {
   "name": "todo-backend",
   "version": "1.0.0",
-  "description": "this is a simple todo application backend",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "bharath kumar",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
-    "zod": "^3.23.8"
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
   }
 }
