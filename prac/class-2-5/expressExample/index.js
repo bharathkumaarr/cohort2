@@ -41,4 +41,13 @@ app.post('/',(req,res)=>{
     })
     res.json({msg: "done!"})
 } )
+
+
+app.put('/', (req,res)=>{
+    for (let i = 0; i<users[0].kidneys.length; i++){
+        users[0].kidneys[i].healthy = true; 
+
+    }
+    res.json({msg: 'done put'})
+})
 app.listen(3000)
