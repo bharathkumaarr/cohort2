@@ -50,4 +50,18 @@ app.put('/', (req,res)=>{
     }
     res.json({msg: 'done put'})
 })
+
+//remove all the unhealthy kidneys
+app.delete('/', (req,res)=>{
+    const newKidneys = []
+    for (let i =0; i< users[0].kidneys.length; i++){
+        if (users[0].kidneys[i].healthy){
+            newKidneys.push({
+                healthy: true
+            })
+        }
+    }
+    users[0].kidneys = newKidneys
+    res.json({msg: 'delete done'})
+})
 app.listen(3000)
