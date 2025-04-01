@@ -31,10 +31,10 @@ app.get('/files',(req,res)=>{
 })
 
 
-app.get('/files/:filename',(req,res)=>{
+app.get('/file/:filename',(req,res)=>{
   const fname = req.params.filename
 
-  fs.readFile(`./files/${fname}.txt`, (err,data)=>{
+  fs.readFile(`./files/${fname}.txt`,'utf8', (err,data)=>{
     if (err){
       res.status(404).send('File not found')
       return
