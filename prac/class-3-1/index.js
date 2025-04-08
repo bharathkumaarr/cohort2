@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-const z = require('zod')
-const schema = z.array(z.number())
+const zod = require('zod')                      // {z}=require('zod')
+const schema = zod.array(zod.number())          // = z.number()
 
 app.use(express.json())
 
@@ -14,8 +14,18 @@ app.get('/health', (req,res,next)=>{
     
 })
 
-app.post('/health', (req,res,next)=>{
-    
+app.post('/health-checkup', (req,res,next)=>{
+    console.log("Request body:", req.body); 
+    // const kidneys = req.body.kidneys;
+    // const response = schema.safeParse(kidneys)
+
+
+    // // const kidneyLength = kidneys.length;
+    // // res.send('you have ' + kidneyLength + ' kidneys')
+
+    // res.send({
+    //     response
+    // })
 })
 
 
